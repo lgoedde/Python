@@ -1,0 +1,49 @@
+#! /usr/bin/env python3.4
+#
+#$Author$
+#$Date$
+#$HeadURL$
+#$Revision$
+
+import sys
+
+if  __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: parse.py [filename]")
+        exit()
+
+    filename = sys.argv[1]
+
+    try:
+        with open(filename, 'r') as f:
+            data = f.readlines()
+    except:
+        print("{} is not a readable file.".format(filename))
+        exit()
+
+    
+    for item in data:
+        item = item.split()
+        printstr = ''
+        nums = []
+        for thing in item:
+            try:
+                thing = int(thing)
+                nums.append(thing)
+            except:
+                printstr += thing
+                printstr += ' '
+
+        try:
+            avg = sum(nums)/len(nums)
+            print("{0:.3f} {1}".format(avg,printstr))
+        except:
+            print(printstr)
+
+
+
+
+
+
+
+

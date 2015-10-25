@@ -1,0 +1,21 @@
+#Answers to questions for Prelab07
+
+1.)
+An object is an instance of a class. The class is created by the programmer and an object is created when you instantiate (call) a class.
+
+2.)
+Member variables store the state of a particular part of the class and can be called while regular variables are not unique to a specific class
+
+3.)
+Member functions belong to an object and have access to the internal state of the object. Regular functions do not have this access. You need the self to refer to instance attributes from the object
+
+4.)
+Inheritance is called an "IS-A" relationship because one object can inherit properties and functions from another object. This is different than composition because composition describes a "HAS-A" relationship. A student IS A person. A car HAS A engine, wheels, etc.
+
+5.)
+A constructor is a special member function that instantiates a class. It is only called once to initialize the states of the member variables for that object. 
+
+6.)
+A constructors name is: def __init__(self,arg1,arg2,etc), and it is only called once during the lifetime of the object. 
+
+

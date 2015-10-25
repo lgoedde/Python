@@ -1,0 +1,75 @@
+#Part 1 Lucas Goedde
+
+1.
+expr = re.compile(' A{2,5} ')
+string = ' AA '
+
+test = re.match(expr,string)
+
+if (test):
+    print(test.group())
+
+else:
+    print("Pattern not found")
+
+2.
+expr = re.compile('\d*\.\d+')
+string = '12.35 3000444.45'
+
+test = re.sub(expr,'float',string)
+
+if (test):
+    print(test)
+
+else:
+    print("Pattern not found")
+
+3.
+expr = re.compile('\d*\.\d+')
+string = '12.35 355.55'
+
+test = re.subn(expr,'float',string,count=0)
+
+if (test):
+    print(test)
+
+
+else:
+    print("Pattern not found")
+
+4.
+expr = re.compile(r'[0-9]+')
+string = '10 20 30'
+
+test = re.findall(expr,string)
+total = 0
+for item in test:
+    total+= int(item)
+
+avg = total/len(test)
+print(avg)
+
+5.
+expr = re.compile(r'(EE364)')
+string = 'EE364 EE364'
+
+test = re.sub(expr,'EE461',string,1)
+print(test)
+
+6.
+expr = re.compile("^((00[0-9]|0[1-9][0-9]|[0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}(00[0-9]|0[1-9][0-9]|[0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$")
+string = '010.10.10.255'
+
+test = re.match(expr,string)
+
+if(test):
+    print("Valid IP Address")
+
+else:
+    print("Error: Not a valid IP Address")
+
+7.
+re.search("e", input, re.I): search the string in variable input for e, regardless of the case(E or e)
+re.match("(.*)(is a)(.*)", input): match string in input for (anything and everything) is a (anything and everything)
+re.match("(?P.*)(?Pis a)(?P.*)", input): Does the same thing as above, but with grouping
+re.search("(I){1}(like){10,}(you){1,2}", input) search for "I like(at least 10 times) you(1 or 2 times)

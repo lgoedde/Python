@@ -1,0 +1,114 @@
+#! /usr/bin/env python3.4
+#
+#$Author$
+#$Date$
+#$HeadURL$
+#$Revision$
+
+from collections import Counter
+from glob import glob
+
+def getFiles(folder):
+    files = []
+    for file in glob(folder+'*'):
+            files.append(file)
+    return files
+
+def getWordFrequency():
+    files = getFiles('files/')
+    allwords=[]
+    for item in files:
+        with open(item, 'r') as f:
+            words = f.readlines()
+            words = words[0].split()
+            for item in words:
+                allwords.append(item)
+
+    freq = Counter(allwords)
+    return freq
+
+def getDuplicates():
+    files = getFiles('files/')
+    data = {}
+    dupes = {}
+
+    for item in files:
+        with open(item, 'r') as f:
+            words = f.read()
+
+
+        if words not in data.keys():
+            data[words] = [item[6:9]]
+
+        else:
+            data[words].append(item[6:9])
+
+    for item in data.values():
+        with open('files/{}.txt'.format(item[0]), 'r') as f:
+            count = f.read()
+            count = count.replace('.','').replace(',','').split()
+            count = set(count)
+            count = len(count)
+
+        dupes[item[0]] = (count,item)
+
+    return dupes
+
+
+
+
+def getPurchaseReport():
+    files = getFiles('purchases/purchase_')
+    prices = {}
+    report = {}
+    with open('purchases/Item List.txt','r') as f:
+        items = f.readlines()
+        del items[0:2]
+        for food in items:
+            food = food.replace(' ','').replace('\n','')
+            food = food.split('$')
+            prices.update({'{}'.format(food[0]):float(food[1])})
+
+    id = 0
+    for item in files:
+        total = 0
+        with open(item, 'r') as f:
+            items = f.readlines()
+            del items[0:2]
+            for food in items:
+                food = food.split()
+                total += (prices[food[0]] * int(food[1]))
+
+        total = round(total,2)
+        report[id] = total
+        id += 1
+
+    return report
+
+def getTotalSold():
+    files = getFiles('purchases/purchase_')
+    item_cnt = {}
+    with open('purchases/Item List.txt','r') as f:
+        items = f.readlines()
+        del items[0:2]
+        for food in items:
+            food = food.replace(' ','').replace('\n','')
+            food = food.split('$')
+            item_cnt[food[0]] = 0
+
+    for file in files:
+        with open(file, 'r') as f:
+            items = f.readlines()
+            del items[0:2]
+
+            for food in items:
+                food = food.split()
+                item_cnt[food[0]]+= int(food[1])
+
+    return item_cnt
+
+
+
+if __name__ == "__main__":
+    getTotalSold()
+

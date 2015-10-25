@@ -1,0 +1,18 @@
+add 12 4
+sub 3 6
+exp 2 2
+11 add 1
+mul 5 6
+mul 2 11
+mod 5 9
+sub 0 0
+5 4 4
+3
+div 30 2
+div 45 2
+mod 8 4
+mul 9 0
+sub 0 9 10
+sub 4 5
+sub 40 50
+add 15 -15

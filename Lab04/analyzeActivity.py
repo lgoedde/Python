@@ -2,7 +2,7 @@
 #
 #$Author: ee364e07 $
 #$Date: 2015-09-22 17:39:41 -0400 (Tue, 22 Sep 2015) $
-#$HeadURL: svn+ssh://ece364sv@ecegrid-thin1/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Lab04/analyzeActivity.py $
+#$HeadURL: svn+ssh://ece364sv@ecegrid/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Lab04/analyzeActivity.py $
 #$Revision: 82134 $
 
 

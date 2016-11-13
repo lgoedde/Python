@@ -2,7 +2,7 @@
 #
 #$Author: ee364e07 $
 #$Date: 2015-10-20 17:07:40 -0400 (Tue, 20 Oct 2015) $
-#$HeadURL: svn+ssh://ece364sv@ecegrid-thin1/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Lab07/Registration.py $
+#$HeadURL: svn+ssh://ece364sv@ecegrid/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Lab07/Registration.py $
 #$Revision: 82832 $
 
 

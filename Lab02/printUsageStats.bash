@@ -2,7 +2,7 @@
 #
 #$Author: ee364e07 $
 #$Date: 2015-09-08 16:55:50 -0400 (Tue, 08 Sep 2015) $
-#$HeadURL: svn+ssh://ece364sv@ecegrid-thin1/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Lab02/printUsageStats.bash $
+#$HeadURL: svn+ssh://ece364sv@ecegrid/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Lab02/printUsageStats.bash $
 #$Revision: 81681 $
 
 if [[ $# != 1 ]]

@@ -2,7 +2,7 @@
 #
 #$Author: ee364e07 $
 #$Date: 2015-10-03 16:31:43 -0400 (Sat, 03 Oct 2015) $
-#$HeadURL: svn+ssh://ece364sv@ecegrid-thin1/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Lab05/practical1.py $
+#$HeadURL: svn+ssh://ece364sv@ecegrid/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Lab05/practical1.py $
 #$Revision: 82371 $
 
 def verifySolution(fileName):

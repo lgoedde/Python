@@ -2,7 +2,7 @@
 #
 #$Author: ee364e07 $
 #$Date: 2015-09-20 19:58:36 -0400 (Sun, 20 Sep 2015) $
-#$HeadURL: svn+ssh://ece364sv@ecegrid-thin1/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Prelab04/dataStructs.py $
+#$HeadURL: svn+ssh://ece364sv@ecegrid/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Prelab04/dataStructs.py $
 #$Revision: 81990 $
 
 from collections import Counter

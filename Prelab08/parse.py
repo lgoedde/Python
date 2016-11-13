@@ -2,7 +2,7 @@
 #
 #$Author: ee364e07 $
 #$Date: 2015-10-22 11:07:39 -0400 (Thu, 22 Oct 2015) $
-#$HeadURL: svn+ssh://ece364sv@ecegrid-thin1/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Prelab08/parse.py $
+#$HeadURL: svn+ssh://ece364sv@ecegrid/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Prelab08/parse.py $
 #$Revision: 82877 $
 
 import sys

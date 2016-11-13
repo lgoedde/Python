@@ -16,5 +16,3 @@ def longer_function(a=1,b=3, c):
 
 for a in range(0, 10):
     print "Hello world"
-
-

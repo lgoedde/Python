@@ -2,7 +2,7 @@
 #
 #$Author: ee364e07 $
 #$Date: 2015-09-08 17:20:01 -0400 (Tue, 08 Sep 2015) $
-#$HeadURL: svn+ssh://ece364sv@ecegrid-thin1/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Lab02/execFiles.bash $
+#$HeadURL: svn+ssh://ece364sv@ecegrid/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Lab02/execFiles.bash $
 #$Revision: 81701 $
 
 files=$(ls c-files)

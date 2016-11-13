@@ -2,7 +2,7 @@
 #
 #$Author: ee364e07 $
 #$Date: 2015-08-30 18:09:13 -0400 (Sun, 30 Aug 2015) $
-#$HeadURL: svn+ssh://ece364sv@ecegrid-thin1/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Prelab01/svncheck.bash $
+#$HeadURL: svn+ssh://ece364sv@ecegrid/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Prelab01/svncheck.bash $
 #$Revision: 80456 $
 
 

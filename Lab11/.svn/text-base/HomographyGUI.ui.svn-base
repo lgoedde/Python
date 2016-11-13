@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>814</width>
+    <height>581</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="loadSource">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>92</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load Source</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadTarget">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>10</y>
+      <width>92</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load Target</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="viewSource">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>391</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="acquirePts">
+    <property name="geometry">
+     <rect>
+      <x>411</x>
+      <y>350</y>
+      <width>101</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Acquire Points</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="point1">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>350</y>
+      <width>113</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="point2">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>350</y>
+      <width>113</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="point4">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>390</y>
+      <width>113</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="point3">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>390</y>
+      <width>113</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="elabel">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>450</y>
+      <width>62</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Effect</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="effectBox">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>440</y>
+      <width>231</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Nothing</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Rotate 90°</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Rotate 180°</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Rotate 270°</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Flip Horizontally</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Flip Vertically</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Transpose</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="transform">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>500</y>
+      <width>92</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Transform</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>500</y>
+      <width>92</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>500</y>
+      <width>92</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save...</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="viewTarget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>50</y>
+      <width>391</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="acquireSpts">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>101</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Acquire Points</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="spoint1">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>340</y>
+      <width>113</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="spoint2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>380</y>
+      <width>113</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>814</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

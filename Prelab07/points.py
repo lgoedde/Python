@@ -2,7 +2,7 @@
 #
 #$Author: ee364e07 $
 #$Date: 2015-10-18 15:41:17 -0400 (Sun, 18 Oct 2015) $
-#$HeadURL: svn+ssh://ece364sv@ecegrid-thin1/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Prelab07/points.py $
+#$HeadURL: svn+ssh://ece364sv@ecegrid/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Prelab07/points.py $
 #$Revision: 82701 $
 
 class PointND:

@@ -2,7 +2,7 @@
 #
 #$Author: ee364e07 $
 #$Date: 2015-10-06 17:25:38 -0400 (Tue, 06 Oct 2015) $
-#$HeadURL: svn+ssh://ece364sv@ecegrid-thin1/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Lab06/parseData.py $
+#$HeadURL: svn+ssh://ece364sv@ecegrid/home/ecegrid/a/ece364sv/svn/F15/students/ee364e07/Lab06/parseData.py $
 #$Revision: 82610 $
 
 import re
